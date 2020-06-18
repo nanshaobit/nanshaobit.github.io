@@ -1,266 +1,49 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
     <title>楠少科技</title>
-    <link href="https://nanshaobit.top/images/favicon.ico" rel="shortcut icon" />
-
-    <link rel="stylesheet" type="text/css" href="static/normalize.css">
-    <link rel="stylesheet" type="text/css" href="static/demo.css">
-    <!--必要样式-->
-    <link rel="stylesheet" type="text/css" href="static/component.css">
-    <!--[if IE]><script src="souye/js/html5.js"></script><![endif]-->
-
-    <style type="text/css">
-        #Layer1 {
-            position: absolute;
+    <meta name="keywords" content="楠少科技|NanshaoTechnology|楠少娱乐|楠少科技官网">
+    <meta name="description" content="楠少科技|NanshaoTechnology|楠少娱乐|楠少科技官网">
+    <link href="//nanshaobit.top/favicon.ico" rel="shortcut icon" />
+    <style>
+        @font-face {
+            font-family: 'webfont';
+            font-display: swap;
+            src: url('//at.alicdn.com/t/webfont_w6hxovj4w5i.eot'); /* IE9*/
+            src: url('//at.alicdn.com/t/webfont_w6hxovj4w5i.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('//at.alicdn.com/t/webfont_w6hxovj4w5i.woff2') format('woff2'),
+            url('//at.alicdn.com/t/webfont_w6hxovj4w5i.woff') format('woff'), /* chrome、firefox */
+            url('//at.alicdn.com/t/webfont_w6hxovj4w5i.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url('//at.alicdn.com/t/webfont_w6hxovj4w5i.svg#杨任东竹石体-Bold') format('svg'); /* iOS 4.1- */
+        }
+        body, html{
+            padding: 0;
+            margin: 0;
+            height: 100%;
             width: 100%;
-            z-index: 2;
-            top: 60%;
+            position: fixed;
+            background-color: #111111;
         }
-        
-        .STYLE3 {
-            font-size: medium
-        }
-    </style>
-
-    <style>
-        html,
-        * {
-            -webkit-user-select: text!important;
-            -moz-user-select: text!important;
-        }
-    </style>
-    <style type="text/css">
-        #htmlToothbrush #bodyToothbrush .parentToothbrush .bilibili-player-video {
-            margin: 0 !important;
-        }
-        
-        #htmlToothbrush,
-        #bodyToothbrush {
-            overflow: hidden !important;
-            zoom: 100% !important;
-        }
-        
-        #htmlToothbrush #bodyToothbrush .parentToothbrush {
-            overflow: visible !important;
-            z-index: auto !important;
-            transform: none !important;
-            -webkit-transform-style: flat !important;
-            transition: none !important;
-            contain: none !important;
-        }
-        
-        #htmlToothbrush #bodyToothbrush .absoluteToothbrush {
-            position: absolute !important;
-        }
-        
-        #htmlToothbrush #bodyToothbrush .playerToothbrush {
-            position: fixed !important;
-            top: 0px !important;
-            left: 0px !important;
-            width: 100vw !important;
-            height: 100vh !important;
-            max-width: none !important;
-            max-height: none !important;
-            min-width: 0 !important;
-            min-height: 0 !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            z-index: 2147483647 !important;
-            border: none !important;
-            background-color: #000 !important;
-            transform: none !important;
-        }
-        
-        #htmlToothbrush #bodyToothbrush .parentToothbrush video {
-            object-fit: contain !important;
-        }
-        
-        #htmlToothbrush #bodyToothbrush .parentToothbrush .videoToothbrush {
-            width: 100vw !important;
-            height: 100vh !important;
-        }
-        
-        #playerControlBtn {
-            text-shadow: none;
-            visibility: hidden;
-            opacity: 0;
-            display: none;
-            transition: all 0.5s ease;
-            cursor: pointer;
-            font: 12px "微软雅黑";
-            margin: 0;
-            width: 64px;
-            height: 20px;
-            line-height: 20px;
-            border: none;
+        .title{
+            font-family:"webfont" !important;
+            font-size: 3em;
+            color: #F0F0F0;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
             text-align: center;
-            position: fixed;
-            z-index: 2147483647;
-            background-color: #27A9D8;
-            color: #FFF;
-        }
-        
-        #playerControlBtn:hover {
-            visibility: visible;
-            opacity: 1;
-            background-color: #2774D8;
-        }
-        
-        #picinpicBtn {
-            text-shadow: none;
-            visibility: hidden;
-            opacity: 0;
-            display: none;
-            transition: all 0.5s ease;
-            cursor: pointer;
-            font: 12px "微软雅黑";
-            margin: 0;
-            width: 53px;
-            height: 20px;
-            line-height: 20px;
-            border: none;
-            text-align: center;
-            position: fixed;
-            z-index: 2147483647;
-            background-color: #27A9D8;
-            color: #FFF;
-        }
-        
-        #picinpicBtn:hover {
-            visibility: visible;
-            opacity: 1;
-            background-color: #2774D8;
-        }
-        
-        #leftFullStackButton {
-            display: none;
-            position: fixed;
-            width: 1px;
-            height: 100vh;
-            top: 0;
-            left: 0;
-            z-index: 2147483647;
-            background: #000;
-        }
-        
-        #rightFullStackButton {
-            display: none;
-            position: fixed;
-            width: 1px;
-            height: 100vh;
-            top: 0;
-            right: 0;
-            z-index: 2147483647;
-            background: #000;
-        }
-    </style>
-    <style>
-        #mpiv-bar {
-            position: fixed;
-            z-index: 2147483647;
-            left: 0;
-            right: 0;
-            top: 0;
-            transform: scaleY(0);
-            -webkit-transform: scaleY(0);
-            transform-origin: top;
-            -webkit-transform-origin: top;
-            transition: transform 500ms ease 1000ms;
-            -webkit-transition: -webkit-transform 500ms ease 1000ms;
-            text-align: center;
-            font-family: sans-serif;
-            font-size: 15px;
-            font-weight: bold;
-            background: rgba(0, 0, 0, 0.6);
-            color: white;
-            padding: 4px 10px;
-        }
-        
-        #mpiv-bar.mpiv-show {
-            transform: scaleY(1);
-            -webkit-transform: scaleY(1);
-        }
-        
-        #mpiv-popup.mpiv-show {
-            display: inline;
-        }
-        
-        #mpiv-popup {
-            display: none;
-            border: 1px solid gray;
-            box-sizing: content-box;
-            background-color: white;
-            position: fixed;
-            z-index: 2147483647;
-            margin: 0;
-            max-width: none;
-            max-height: none;
-            will-change: display, width, height, left, top;
-            cursor: none;
-        }
-        
-        .mpiv-loading:not(.mpiv-preloading) * {
-            cursor: wait!important;
-        }
-        
-        .mpiv-edge #mpiv-popup {
-            cursor: default;
-        }
-        
-        .mpiv-error * {
-            cursor: not-allowed!important;
-        }
-        
-        .mpiv-ready *,
-        .mpiv-large * {
-            cursor: zoom-in!important;
-            cursor: -webkit-zoom-in!important;
-        }
-        
-        .mpiv-shift * {
-            cursor: default!important;
+            width: 100%;
+            height: 300px;
+            line-height: 300px;
+            position: relative;
+            top: 50%; /*偏移*/
+            margin: -150px 0 0 0!important;
+            padding: 0!important;
         }
     </style>
 </head>
-
 <body>
-
-    <div class="container demo-1">
-        <div class="content">
-            <div id="large-header" class="large-header" style="height: 997px;">
-                <canvas id="demo-canvas" width="1920" height="997"></canvas>
-                <h1 class="main-title">楠少科技<br><span class="STYLE3">https://nanshaobit.top</span></h1>
-            </div>
-            <div id="Layer1">
-                <nav class="codrops-demos">
-                    <a href="https://nanshaobit.top/">首页</a>
-                    <a href="https://blog.nanshaobit.top/">博客</a>
-                    <a href="https://pwd.nanshaobit.top/">密码本</a>
-                    <a href="https://music.nanshaobit.top/">音乐盒</a>
-                    <a href="https://n-s.fun/">短链</a>
-                </nav>
-            </div>
-        </div>
-    </div>
-
-
-    <script src="static/TweenLite.js"></script>
-    <script src="static/EasePack.js"></script>
-    <script src="static/rAF.js"></script>
-    <script src="static/demo-1.js"></script>
-
-
-    <audio autoplay="autoplay" loop="loop">
-		<source src="https://nanshaobit.top/bg.mp3" type="audio/mpeg">
-		您的浏览器不支持播放音乐。请用支持html5的浏览器打开,例如chrome或火狐或者新版IE等。 <br />
-		-----L.Z.nanshao-----
-	</audio>
-	
-<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278307454' style='display:none' %3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s9.cnzz.com/z_stat.php%3Fid%3D1278307454' type='text/javascript'%3E%3C/script%3E"));</script>
-	</body>
+    <div class="title">工学者，巧心，劳力，造器物</div>
+</body>
 </html>
